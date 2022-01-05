@@ -12,6 +12,9 @@
         android:theme="@style/Theme.XposedDemo"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".AccessibilityActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

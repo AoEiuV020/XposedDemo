@@ -8,18 +8,19 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText,ContentDescription,LabelFor,TextFields">
 
-    <Button
-        android:id="@+id/btnHello"
-        style="@style/Widget.AppCompat.Button.Colored"
+    <TextView
+        android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello" />
+        android:text="Result"
+        android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/btnAccessibility"
-        style="@style/Widget.AppCompat.Button.Colored"
+    <TextView
+        android:id="@+id/tvReason"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Accessibility" />
+        android:gravity="center"
+        android:text="Reason"
+        android:textSize="25sp" />
 
 </LinearLayout>

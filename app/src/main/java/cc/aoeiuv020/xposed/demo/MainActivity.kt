@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.btnHello).setOnClickListener {
             Toast.makeText(this, getGreetingWord(), Toast.LENGTH_SHORT).show()
         }
+
+        findViewById<View>(R.id.btnAccessibility).setOnClickListener {
+            AccessibilityActivity.start(this)
+        }
     }
 
     private fun getGreetingWord() = "Hello"
