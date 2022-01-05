@@ -1,0 +1,62 @@
+Alias name: XposedDemo
+Creation date: 2022年1月5日
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=AoEiuV020, OU=XposedDemo, O=AoEiuV020, L=China, ST=China, C=CN
+Issuer: CN=AoEiuV020, OU=XposedDemo, O=AoEiuV020, L=China, ST=China, C=CN
+Serial number: 55775085
+Valid from: Wed Jan 05 21:45:23 CST 2022 until: Sun May 23 21:45:23 CST 2049
+Certificate fingerprints:
+	 SHA1: 77:C7:97:70:40:06:B1:8C:10:E5:6F:3B:1B:D3:4F:58:3E:69:27:C2
+	 SHA256: A5:F4:84:DB:2F:E7:75:32:FC:6D:55:76:FA:59:F9:29:21:96:EC:95:C9:27:53:40:26:4B:CC:8B:D1:D0:39:AE
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 22 22 FB B8 C0 1E 48 BD   02 BA 24 88 BF 1E 3B 85  ""....H...$...;.
+0010: 7F 4D 5F 44                                        .M_D
+]
+]
+
+
+> Task :app:signingReport
+Variant: debug
+Config: config
+Store: /mnt/wext/code/git/XposedDemo/XposedDemo.jks
+Alias: XposedDemo
+MD5: 1C:8E:24:A7:13:89:3C:97:87:0F:71:CE:C1:4B:14:B0
+SHA1: 77:C7:97:70:40:06:B1:8C:10:E5:6F:3B:1B:D3:4F:58:3E:69:27:C2
+SHA-256: A5:F4:84:DB:2F:E7:75:32:FC:6D:55:76:FA:59:F9:29:21:96:EC:95:C9:27:53:40:26:4B:CC:8B:D1:D0:39:AE
+Valid until: Sunday, May 23, 2049
+----------
+Variant: release
+Config: config
+Store: /mnt/wext/code/git/XposedDemo/XposedDemo.jks
+Alias: XposedDemo
+MD5: 1C:8E:24:A7:13:89:3C:97:87:0F:71:CE:C1:4B:14:B0
+SHA1: 77:C7:97:70:40:06:B1:8C:10:E5:6F:3B:1B:D3:4F:58:3E:69:27:C2
+SHA-256: A5:F4:84:DB:2F:E7:75:32:FC:6D:55:76:FA:59:F9:29:21:96:EC:95:C9:27:53:40:26:4B:CC:8B:D1:D0:39:AE
+Valid until: Sunday, May 23, 2049
+----------
+Variant: debugAndroidTest
+Config: config
+Store: /mnt/wext/code/git/XposedDemo/XposedDemo.jks
+Alias: XposedDemo
+MD5: 1C:8E:24:A7:13:89:3C:97:87:0F:71:CE:C1:4B:14:B0
+SHA1: 77:C7:97:70:40:06:B1:8C:10:E5:6F:3B:1B:D3:4F:58:3E:69:27:C2
+SHA-256: A5:F4:84:DB:2F:E7:75:32:FC:6D:55:76:FA:59:F9:29:21:96:EC:95:C9:27:53:40:26:4B:CC:8B:D1:D0:39:AE
+Valid until: Sunday, May 23, 2049
+----------
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/7.0.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 906ms
+1 actionable task: 1 executed
