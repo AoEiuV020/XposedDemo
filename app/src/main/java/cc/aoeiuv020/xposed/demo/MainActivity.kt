@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<View>(R.id.btnHello).setOnClickListener {
-            Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getGreetingWord(), Toast.LENGTH_SHORT).show()
         }
     }
+
+    private fun getGreetingWord() = "Hello"
 }

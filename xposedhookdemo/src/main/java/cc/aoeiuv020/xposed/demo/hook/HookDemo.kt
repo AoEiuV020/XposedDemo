@@ -1,12 +1,13 @@
-package cc.aoeiuv020.xposed.demo.hook;
+package cc.aoeiuv020.xposed.demo.hook
 
-import de.robv.android.xposed.IXposedHookLoadPackage;
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
+import de.robv.android.xposed.*
+import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam
 
-public class HookDemo implements IXposedHookLoadPackage {
-    @SuppressWarnings("RedundantThrows")
-    public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
-        XposedBridge.log("Loaded app: " + lpparam.packageName);
+class HookDemo : IXposedHookLoadPackage {
+    @Throws(Throwable::class)
+    override fun handleLoadPackage(lpparam: LoadPackageParam) {
+        XposedBridge.log("Loaded app: " + lpparam.packageName)
+        XposedHelpers.findAndHookMethod("cc.aoeiuv020.xposed.demo.MainActivity",
+        lpparam.classLoader, "getGreetingWord", XC_MethodReplacement.returnConstant("你马死了！"))
     }
 }
