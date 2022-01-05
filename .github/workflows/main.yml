@@ -86,7 +86,7 @@ jobs:
           SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
         if: ${{ env.SIGNING_KEY != '' }}
         with:
-          releaseDirectory: ./hook/build/outputs/apk/release
+          releaseDirectory: ./xposedhookdemo/build/outputs/apk/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
