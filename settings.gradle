@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "XposedDemo"
 include ':app'
+include ':xposedhookdemo'
